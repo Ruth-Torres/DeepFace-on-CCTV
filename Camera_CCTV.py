@@ -59,7 +59,7 @@ with mp_face_detection.FaceDetection(model_selection=1, min_detection_confidence
                 
                 # Guardar la imagen con la cara detectada en la carpeta 'capturas'
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-                cv2.imwrite(f'../captures/capture_{timestamp}.jpg', frame)
+                cv2.imwrite(f'./captures/capture_{timestamp}.jpg', frame)
 
         # Mostrar el frame con las detecciones
         cv2.imshow('Cámara de Vigilancia', frame)
