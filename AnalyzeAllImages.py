@@ -249,7 +249,7 @@ for imagen in imagenes:
             # Calcular la posición para centrar el texto "INTRUDER" horizontalmente
             x_position = (w - text_width) // 2
 
-            # Añaadir la información de intrusos a la imagen
+            # Añadir la información de intrusos a la imagen
             cv2.putText(padded_image, f"INTRUDER", (x_position, 100), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 2)
             cv2.putText(padded_image, f"Age: {dicc['age']}", (100, h-230), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
             cv2.putText(padded_image, f"Gender: {dicc.get('dominant_gender')}", (100, h-190), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)

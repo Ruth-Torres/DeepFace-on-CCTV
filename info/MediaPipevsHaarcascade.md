@@ -30,6 +30,6 @@ La elección entre MediaPipe y HaarCascade para el reconocimiento de caras depen
 Si necesitas un sistema robusto y preciso para el reconocimiento facial en diversas condiciones, **MediaPipe** es la mejor opción. Si buscas una solución rápida y fácil de implementar con menos requisitos de hardware, **HaarCascade** puede ser suficiente.
 
 ## Bibliografía:
-(1) What is Face Detection? Ultimate Guide 2023 + Model Comparison. https://learnopencv.com/what-is-face-detection-the-ultimate-guide/.
-(2) JuliaZoltowska/Face-detection-models - GitHub. https://github.com/JuliaZoltowska/Face-detection-models.
-(3) Face Detection: Haar Cascade vs. MTCNN - Data Wow. https://www.datawow.io/blogs/face-detection-haar-cascade-vs-mtcnn.
+- (1) What is Face Detection? Ultimate Guide 2023 + Model Comparison. https://learnopencv.com/what-is-face-detection-the-ultimate-guide/.
+- (2) JuliaZoltowska/Face-detection-models - GitHub. https://github.com/JuliaZoltowska/Face-detection-models.
+- (3) Face Detection: Haar Cascade vs. MTCNN - Data Wow. https://www.datawow.io/blogs/face-detection-haar-cascade-vs-mtcnn.

@@ -62,7 +62,7 @@ with mp_face_detection.FaceDetection(model_selection=1, min_detection_confidence
                 cv2.imwrite(f'../captures/capture_{timestamp}.jpg', frame)
 
         # Mostrar el frame con las detecciones
-        cv2.imshow('Camara de Vigilancia', frame)
+        cv2.imshow('Cámara de Vigilancia', frame)
 
         # Salir del bucle si se presiona la tecla 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):
