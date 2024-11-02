@@ -24,9 +24,9 @@ import mediapipe as mp
 import datetime
 import os
 
-# Crear la carpeta 'capturas' si no existe
-if not os.path.exists('../captures'):
-    os.makedirs('../captures')
+# Crear la carpeta 'captures' si no existe
+if not os.path.exists('./captures'):
+    os.makedirs('./captures')
 
 # Inicializar MediaPipe Face Detection
 mp_face_detection = mp.solutions.face_detection
@@ -34,12 +34,16 @@ mp_drawing = mp.solutions.drawing_utils
 
 # Configurar la captura de video
 camara = cv2.VideoCapture(0)
+if not camara.isOpened():
+    print("No es posible abrir la cámara")
+    exit()
 
 # Crear el detector de caras
 with mp_face_detection.FaceDetection(model_selection=1, min_detection_confidence=0.5) as face_detection:
     while camara.isOpened():
         ret, frame = camara.read()
         if not ret:
+            print("No es posible obtener la imagen")
             break
 
         # Convertir el frame a RGB

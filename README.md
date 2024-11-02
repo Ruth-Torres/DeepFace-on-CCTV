@@ -9,10 +9,13 @@ Luego, se analizarán los rasgos faciales del intruso y se generará una imagen 
 
 ## Organización del repositorio
 ### Archivo `main.py`
-El programa principal del proyecto, con todas las funcionalidades incluidas. Actualmente NO FUNCIONAL.
+El programa principal del proyecto. Ejecuta primero el archivo `Camera_CCTV.py` y una vez termine, ejecutará el archivo `AnalyzeAllImages.py`.
 
-### Archivo `FacesDetection.py`
-El programa principal con toda la parte de analisis facial. Actualmente FUNCIONAL.
+### Archivo `Camera_CCTV.py`
+El programa con toda la parte de capturar caras con la cámara. Abrirá la camara y cada vez que detecte una cara, guardará una captura en la carpeta *captures* con su timestamp correspondiente.
+
+### Archivo `AnalyzeAllImages.py`
+El programa con toda la parte de analisis facial. Analizará todas las imagenes en la carpeta *captures* y creará un cartel de **INTRUDER** en la carpeta *intruders* con sus datos.
 
 ### Carpeta functionsSeparated
 En esta carpeta se encuentran las distintas funciones utilizadas en el programa principal por separado.
@@ -24,7 +27,7 @@ Son clasificadores ya entrenados e importados desde el respositorio de OpenCV. E
 Una serie de imagenes de prueba para las distintas funciones.
 
 ### Carpeta info
-Archivos con infomación adicional sobre las librearías usadas.
+Archivos con infomación adicional sobre las librerías usadas.
 
 ### Carpeta captures
 Las imágenes con caras detectadas por la camara.
@@ -35,6 +38,12 @@ Las imágenes generadas con la descripción de la cara.
 ## Instalaciones previas
 Para poder ejecutar este programa, será necesario instalar algunas librerias:
 - Python (La versión utilizada para este proyecto es la 3.12.6)
+
+- OS: una librería que viene instalada con Python. Proporciona funcionalidad independiente del sistema operativo.
+
+- Datetime: una librería que viene instalada con Python y sirve para manejar fechas en Python.
+
+- Subprocess: una librería que viene instalada con Python. Es una herramienta que te permite ejecutar otros programas o comandos desde tu código Python.
 
 - OpenCV: una librería de computación visual para el procesamiento de imágenes en Python.
 ```

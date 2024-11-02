@@ -163,9 +163,6 @@ def get_hair_color(image):
         img [:] = bgr  # Color RGB
         cv2.imshow('Imagen color de pelo', img)
 
-        # Mostrar la imagen con la región del pelo marcada
-        # cv2.imshow('Hair Region', hair_region)
-
         # Devolver el color del pelo
         color = hair_color # + " " + str(bgr)
         return color
@@ -194,11 +191,11 @@ def detect_glasses(image):
     return "Lleva gafas"
 
 # Cargar la imagen
-#image_path = './images/persona.jpg'
-#image_path = './images/fotograma.jpg'
-image_path = './images/galgadot.jpg'
-#image_path = './images/galgadot_gafas.jpg'
-#image_path = './images/galgadot_gafas2.jpg'
+#image_path = '../images/persona.jpg'
+#image_path = '../images/fotograma.jpg'
+image_path = '../images/galgadot.jpg'
+#image_path = '../images/galgadot_gafas.jpg'
+#image_path = '../images/galgadot_gafas2.jpg'
 image = cv2.imread(image_path)
 
 # Verificar si la imagen se ha cargado correctamente
